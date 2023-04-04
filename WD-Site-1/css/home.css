@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: large;
+  font-weight: bold;
+}
+
+body {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, for modern browsers */
+  background-image: linear-gradient(to right, #b8edfd, #6057db);
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*--background--*/
+section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 70%;
+  margin: 0%;
+}
+
+.layerbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.top {
+  animation: breathingdown 6s ease-in-out infinite;
+}
+
+.bottom {
+  animation: breathingup 4s ease-in-out infinite;
+}
+
+.topf {
+  animation: fbreathingdown 5s ease-in-out infinite;
+}
+
+.bottomf {
+  animation: fbreathingup 5s ease-in-out infinite;
+}
+
+/*--carousel--*/
+.anotherflexbox {
+  margin: 0px;
+  display: flex;
+  position: absolute;
+}
+
+.carousel-text {
+  position: absolute;
+  text-align: center;
+  width: max-content;
+  top: 37.8%;
+  left: 50%;
+  color: white;
+  font-size: 3.3vh;
+  transition: ease;
+  transform: translateX(-50%);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.carousel-item {
+  display: flex;
+  position: absolute;
+  width: 4vh;
+  height: 4vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transition: all 0.3s;
+  overflow: hidden;
+  border-width: 5px;
+  border: 1px solid;
+  border-color: white;
+}
+
+.carousel-item:hover {
+  width: 4.2vh;
+  cursor: pointer;
+  opacity: 1;
+  border-color: cyan;
+}
+
+/*--buttons man--*/
+.Mathbutton {
+
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: ease;
+}
+
+.Mathbutton img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+
+.Randombutton {
+
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: ease;
+}
+
+.Randombutton img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+
+.Snakebutton {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: ease;
+}
+
+.Snakebutton img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+
+.aboutusButton {
+  position: fixed;
+  top: 60.4%;
+  border: 3px solid white;
+  width: 3.5vh;
+  height: 3.5vh;
+  border-radius: 100%;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  color: white;
+  ;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.aboutusButton img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+
+.aboutusButton:hover {
+  width: 5vh;
+  border-color: cyan;
+}
+
+/*--dear god help me--*/
+.arrow {
+  position: fixed;
+  top: 59%;
+  background: none;
+  border: none;
+  font-size: 5vh;
+  cursor: pointer;
+  margin: 0;
+  color: white;
+  ;
+}
+
+.left {
+  left: 45%;
+}
+
+.left:hover {
+  transform: rotate(-10deg);
+  transition: ease 0.3s;
+  color: cyan;
+}
+
+.right {
+  right: 45%;
+}
+
+.right:hover {
+  transform: rotate(10deg);
+  transition: ease 0.3s;
+  color: cyan;
+}
+
+.liner {
+  width: 20vh;
+  position: absolute;
+  border-color: white;
+  border-style: double;
+  border-radius: 1vh;
+  border-width: 0.5vh;
+  top: 58.9%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: ease-in-out 0.1s;
+}
+
+.liner:hover {
+  width: 25vh;
+}
+
+/*--WOAH ANIMATION--*/
+@keyframes breathingdown {
+  0% {
+    transform: translateY(0);
+    transform: rotate(0);
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: translateY(-10px);
+    transform: rotate(5deg);
+    transform: scale(1);
+  }
+
+  100% {
+    transform: translateY(0);
+    transform: rotate(0);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes breathingup {
+  0% {
+    transform: translateY(0);
+    transform: rotate(0);
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: translateY(10px);
+    transform: rotate(-5deg);
+    transform: scale(1);
+  }
+
+  100% {
+    transform: translateY(0);
+    transform: rotate(0);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fbreathingdown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes fbreathingup {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+
+  }
+}

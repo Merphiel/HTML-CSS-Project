@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Amogus Project </title>
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+    <section>
+        <img src="assets/topleft-fb.png" draggable="false" class="top" id="layerbg">
+        <img src="assets/topleft-f.png" draggable="false" class="topf" id="layer">
+        <img src="assets/bottomright-fb.png" draggable="false" class="bottom" id="layerbg">
+        <img src="assets/bottomright-f.png" draggable="false" class="bottomf" id="layer">
+
+        <div class="anotherflexbox">
+            <button class="arrow left" onclick="rotateLeft()">&lt;</button>
+            <div>
+                <hr class="liner">
+            </div>
+            <div class="carousel-text">Random Word Search</div>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <a href="mathGame.html">
+                        <button class="Mathbutton"><img src="assets/MathPlace.gif" draggable="false"></button>
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="wordSearch.html">
+                        <button class="Randombutton"><img src="assets/RandomPlace.gif" draggable="false"></button>
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="sneakGame.html">
+                        <button class="Snakebutton"><img src="assets/SnakePlace.gif" draggable="false"></button>
+                    </a>
+
+                </div>
+            </div>
+            <a href="aboutUs.html">
+                <button class="aboutusButton"><img src="assets/abouticon.png" draggable="false"></button>
+            </a>
+            <button class="arrow right" onclick="rotateRight()">&gt;</button>
+
+        </div>
+    </section>
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

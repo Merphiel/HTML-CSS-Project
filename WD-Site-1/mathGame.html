@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Math Game
+
+</title>
+
+<head>
+    <link rel="stylesheet" href=css/mathGame.css>
+</head>
+
+<body>
+
+    <section>
+        <img src="assets/pleft-f.png" draggable="false" class="right" id="layer">
+        <img src="assets/left.png" draggable="false" class="rightf" id="layerbg">
+        <img src="assets/pright-f.png" draggable="false" class="left" id="layer">
+        <img src="assets/right.png" draggable="false" class="leftf" id="layerbg">
+    </section>
+    
+    <div class="mainbody">
+        
+        <div class="">
+            <h2>Welcome To The Math Game</h2>
+        </div>
+        <div class="scoreBody">
+            <div class="scoreValue" id="scoreVal">
+                <p>SCORE: </p>
+            </div>
+        </div>
+        <div class="questionBody">
+             <div id="question">Question</div>
+        </div>
+       
+        <div class="questionBody">
+            <input type="text" id="num">
+            <button class="sadmit" id="susmit" onclick="checkAnswer()">  Submit</button>
+        </div>
+        
+        <div class="doki">
+            <div>
+                <img src="assets/m_sticker_1.png" alt="Character" class="chibi" id="monika">
+            </div>
+            <div>
+                <img src="assets/s_sticker_1.png" alt="Character" class="chibi" id="sayori">
+            </div>
+            <div>
+                <img src="assets/y_sticker_1.png" alt="Character" class="chibi" id="yuri">
+            </div>
+            <div>
+                <img src="assets/n_sticker_1.png" alt="Character" class="chibi" id="natsuki">
+            </div>
+            <a href="Home.html" class="backbutton">
+                BACK
+                </button></a>
+        </div>
+    </div>
+
+</body>
+
+
+
+<script src="js/mathGame.js"></script>
+
+</html>

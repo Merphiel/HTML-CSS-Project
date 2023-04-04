@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search</title>
+    <link rel="stylesheet" href="css/wordstyle.css">
+</head>
+
+<body>
+    <section>
+        <img src="assets/wleft-f.png" draggable="false" class="right" id="layer">
+        <img src="assets/left.png" draggable="false" class="rightf" id="layerbg">
+        <img src="assets/wright-f.png" draggable="false" class="left" id="layer">
+        <img src="assets/right.png" draggable="false" class="leftf" id="layerbg">
+    </section>
+    <main>
+
+        <div id="game-container">
+            <div class="snektitle">Random Word Search</div>
+            <div class="snekdesc">Use mouse pointer to select<br></div>
+            <div id="game-board"></div>
+            <div class="words" id="word-list">Loading Word Generation API. Please Wait [Up to 5 Seconds]<br>
+                If Words/API fail to load, Please reload the page or contact the developers.
+
+            </div>
+            <a href="Home.html" class="backbutton">BACK</a>
+        </div>
+
+    </main>
+
+
+    <script src="js/wordscript.js"></script>
+</body>
+
+</html>
