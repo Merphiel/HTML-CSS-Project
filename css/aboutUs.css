@@ -1,0 +1,290 @@
+/* header font */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Josefin+Sans:wght@300&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body
+{
+    background-color:rgba(0, 0, 0, 0.715);
+    font-family: 'Changa One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding:0%;
+}
+/*--background--*/
+section img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+    margin: 0%;
+}
+
+.layerbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+
+.top{
+    animation: breathingdown 6s ease-in-out infinite;
+}
+.bottom{
+    animation: breathingup 4s ease-in-out infinite;
+}
+.topf{
+    animation: fbreathingdown 5s ease-in-out infinite;
+}
+.bottomf{
+    animation: fbreathingup 5s ease-in-out infinite;
+}
+
+.sus
+{
+    width:100vh;
+    flex-direction: column;
+    display:flex;
+    position: absolute;
+    left: 50%;
+    top:30%;
+    transform: translateX(-50%);
+}
+
+.sus h1
+{
+    font-family: 'Changa One', cursive; 
+    font-size: 6vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    color: rgb(140, 255, 217);
+    text-transform: uppercase;
+}
+
+.mainTeam
+{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.teamMember:hover
+{
+    cursor: pointer;
+}
+.mainTeam .teamMember
+{
+   margin: 1vh;
+   margin-bottom: 1vh;
+   width: 22vh;
+   color: white;
+   position: relative;
+}
+.mainTeam .teamMember h3
+{
+    color: cyan;
+    font-size: 1vh;
+    margin-top: 1vh;
+    visibility: hidden;
+}
+
+.teamMember:hover h3
+{
+    color: cyan;
+    font-size: 2vh;
+    margin-top: 1vh;
+    visibility: visible;
+}
+.mainTeam .teamMember p.role
+{
+    color: #ccc;
+    font-size: 1vh;
+    text-transform: uppercase;
+    margin: 1vh 0;
+}
+
+.mainTeam .teamMember p
+{
+    color: #ccc;
+    font-size: 0.5vh;
+    visibility: hidden;
+    margin: 1vh 0;
+}
+
+.teamMember:hover p
+{
+    color: #ccc;
+    font-size: 2vb;
+    visibility: visible;
+    margin: 1v 0;
+    
+}
+
+
+.teamMember img
+{
+    border: 0.3vh solid lightgray;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.button
+{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.25rem;
+    position:relative;
+    margin: 32px;
+    width: 200px;
+}
+
+.button
+{
+    background: black;
+    color: white;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.button::after, .button::before
+{
+    content: "";
+    position:absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+
+
+.img::after, .img::before
+{
+    
+    content: "";
+    position:absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3 ease;
+}
+
+.img:hover{
+    transform: translate(-12px, -12px)
+}
+.img:hover::after{
+    transform: translate(6px, 6px)
+}
+.img:hover::before{
+    transform: translate(12px, 12px)
+}
+
+/*--WOAH ANIMATION--*/
+@keyframes breathingdown {
+    0% {
+      transform: translateY(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+    50% {
+      transform: translateY(-10px);
+      transform: rotate(-5deg);
+      transform: scale(1);
+    }
+    100% {
+      transform: translateY(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes breathingup {
+    0% {
+      transform: translateY(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+    50% {
+      transform: translateY(10px);
+      transform: rotate(5deg);
+      transform: scale(1);
+    }
+    100% {
+      transform: translateY(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes fbreathingdown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+
+    }
+}
+    @keyframes fbreathingup {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+        100% {
+          transform: translateY(0);
+
+        }
+    }
+  
+
+    .backbutton{
+        padding: 1.1vh;
+        font-size: 1.4vh;
+        text-decoration: none;
+        background: black;
+        color: white;
+        border-radius: 30px;
+        transition: transform 0.3s ease;
+        width: 12vh;
+        height: 3.3vh;
+        text-align: center;
+        position:absolute;
+        top:75%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    

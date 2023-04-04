@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, for modern browsers */
+    background-image: linear-gradient(to right, #9554ff, #ecb0ff);
+    font-family: 'Changa One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+
+}
+
+
+.right{
+    animation: sleft 6s ease-in-out infinite;
+}
+.left{
+    animation: sright 4s ease-in-out infinite;
+}
+.rightf{
+    animation: fright 5s ease-in-out infinite;
+}
+.leftf{
+    animation: fleft 5s ease-in-out infinite;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding:0%;
+}
+/*--background--*/
+section img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 75%;
+    margin: 0%;
+}
+.layerbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+h2 {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+
+}
+
+.mainbody{
+    position: fixed;
+}
+
+.scoreBody {
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    width: 100%;
+}
+
+
+.questionBody {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: auto;
+}
+
+.question {
+    font-family: 'Permanent Marker', cursive;
+    flex-direction: row;
+    top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vh;
+
+
+
+}
+
+.questionBody input {
+    border: 2px solid;
+    border-radius: 5px;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    background: none;  
+    cursor: pointer;
+    margin-left: 100px;
+    
+}
+
+
+.sadmit {
+   
+    text-decoration: none;
+    padding: 20px 50x;
+    font-size: 10px;
+    width: 95px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 30px;
+    background: none;
+}
+
+
+
+.doki {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+
+.chibi {
+    align-items: center;
+    user-select: none;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.backbutton{
+    padding: 0.8vh;
+    font-size: 1.4vh;
+    text-decoration: none;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    width: 12vh;
+    height: 3.3vh;
+    text-align: center;
+    position:absolute;
+    top:180%;
+    left:50%;
+    transform: translateX(-50%);
+}
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes sleft {
+    0% {
+      transform: translateX(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+    50% {
+      transform: translateX(-10px);
+      transform: rotate(5deg);
+      transform: scale(1);
+    }
+    100% {
+      transform: translateX(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes sright {
+    0% {
+      transform: translateY(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+    50% {
+      transform: translateY(10px);
+      transform: rotate(-5deg);
+      transform: scale(1);
+    }
+    100% {
+      transform: translateY(0);
+      transform: rotate(0);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes fleft {
+    0% {
+      transform: translateX(0);
+      transform: rotate(0);
+    }
+    50% {
+      transform: translateX(10px);
+      transform: rotate(-8px);
+    }
+    100% {
+      transform: translateX(0);
+      transform: rotate(0);
+    }
+}
+    @keyframes fright {
+        0% {
+          transform: translateX(0);
+          transform: rotate(0);
+        }
+        50% {
+          transform: translateX(-10px);
+          transform: rotate(8px);
+        }
+        100% {
+          transform: translateX(0);
+          transform: rotate(0);
+        }
+    }
+  
